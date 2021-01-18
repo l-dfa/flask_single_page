@@ -1,0 +1,1 @@
+venv\Scripts\pybabel.exe init -i messages.pot -d single_page\translations -l it

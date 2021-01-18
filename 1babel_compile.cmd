@@ -1,0 +1,1 @@
+venv\Scripts\pybabel.exe compile -d single_page\translations

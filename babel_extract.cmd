@@ -1,0 +1,1 @@
+venv\Scripts\pybabel.exe extract -F babel.cfg -o messages.pot single_page

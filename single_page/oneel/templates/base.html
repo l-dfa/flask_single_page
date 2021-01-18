@@ -1,0 +1,21 @@
+<!doctype html>
+
+<!-- filename single_page/oneel/templates/base.html -->
+
+<title>{% block title %}{% endblock %} - Single Page, single language</title>
+<link rel="stylesheet" href="{{ url_for('oneel.static', filename='css/style.css') }}">
+<nav>
+  <h1>Single Page - single language</h1>
+  <ul>
+      <li><a href="{{ url_for('oneel.index') }}">single language index</a>
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>

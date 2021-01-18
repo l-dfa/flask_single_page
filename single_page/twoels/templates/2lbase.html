@@ -1,0 +1,25 @@
+<!doctype html>
+
+<!-- filename single_page/twoels/templates/2lbase.html -->
+
+<title>{% block title %}{% endblock %} - {{ _('Single Page, two languages') }}</title>
+<link rel="stylesheet" href="{{ url_for('oneel.static', filename='css/style.css') }}">
+<nav>
+  <h1>{{ _('Single Page - two languages') }}</h1>
+  <ul>
+      <li><a href="{{ url_for('oneel.index') }}">{{ _('single language index') }}</a>
+      <li><a href="{{ url_for('twoels.index') }}">{{ _('two languages index') }}</a>
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  
+  {% block content %}{% endblock %}
+  
+</section>

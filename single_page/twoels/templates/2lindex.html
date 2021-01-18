@@ -1,0 +1,11 @@
+{% extends '2lbase.html' %}
+
+<!-- filename single_page/twoels/templates/2lindex.html -->
+
+{% block header %}
+  <h1>{% block title %}{{ title }}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <p>{{ _('Single page, two languages, content') }}</p>
+{% endblock %}
