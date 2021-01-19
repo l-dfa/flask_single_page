@@ -11,7 +11,7 @@ Needed knowledges
 -------------------
 
 This is not a training *ab initio*. It's a fast note just to remember
-how to do it. So, to understand this note you need to know:
+how to do it. So, to understand this project you need to know:
 
 * what is a web site, a programming language, a development framework;
 * a basic knowledge of Python, html, http;
@@ -37,8 +37,6 @@ Base environments:
 * `git <https://git-scm.com/downloads>`_
 * `python <https://www.python.org/downloads/>`_ >= 3.8
 
-No third parties libraries.
-
 To install the development environment and run it
 ----------------------------------------------------
 
@@ -51,6 +49,7 @@ In cmd::
     (venv) >python -m pip install -U pip     # upgrade pip
     (venv) >pip install flask                # install flask in virtual env.
     (venv) >pip install Flask-Babel          # install flask-babel in virtual env.
+    (venv) >pip install flask-sitemap        # install flask-sitemap in virtual env.
     (venv) >python run.py
   
 More infos
@@ -58,9 +57,10 @@ More infos
 
 @ these links:
 
-* `Flask: how show a page with single language <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project>`_;
-* `Flask: how show a page with two languages <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_2nd_part>`_;
-* `Flask: managing the URLs <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_3rd_part>`_.
+* `how show a page with single language <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project>`_;
+* `how show a page with two languages <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_2nd_part>`_;
+* `managing the URLs <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_3rd_part>`_;
+* `creating a sitemap.xml <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_4th_part>`_.
 
 License
 ----------

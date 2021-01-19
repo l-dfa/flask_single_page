@@ -1,16 +1,15 @@
 # :filename: single_page/twoels/views.py        this is the views module
 
 # std libs import
-# import os
+from datetime import datetime
 
 # 3rd parties libs import
 from flask import Blueprint, current_app, render_template, request, g
-
 from flask_babel import _
-# from flask_babel import lazy_gettext as _l
-# from flask_babel import get_locale
 
+# project modules import
 from single_page import babel
+from single_page import sitemap
 
 # this app will respond to srv/<lang_code>/2l/... URLs
 twoels = Blueprint('twoels', 
@@ -46,3 +45,14 @@ def get_locale():
     if g.get('lang_code', None):
         return request.accept_languages.best_match([g.lang_code,])
     return request.accept_languages.best_match(current_app.config['LANGUAGES'].keys())
+    
+@sitemap.register_generator
+def index():
+    '''generate URLs using language codes
+    
+       Note. used by flask-sitemap
+    '''
+    for lc in current_app.config['LANGUAGES'].keys():
+        g.lang_code = lc                               # used by add_language_code
+        #yield 'twoels.index', {'lang_code': lc}
+        yield 'twoels.index', {}, datetime.now(), 'monthly', 0.7
