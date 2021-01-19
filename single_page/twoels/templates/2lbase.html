@@ -9,6 +9,8 @@
   <ul>
       <li><a href="{{ url_for('oneel.index') }}">{{ _('single language index') }}</a>
       <li><a href="{{ url_for('twoels.index') }}">{{ _('two languages index') }}</a>
+      <li><a href="{{ url_for('twoels.index', lang_code='it') }}">{{ _('two languages, italian index') }}</a>
+      <li><a href="{{ url_for('twoels.index', lang_code='en') }}">{{ _('two languages, english index') }}</a>
   </ul>
 </nav>
 <section class="content">

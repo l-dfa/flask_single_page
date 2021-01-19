@@ -3,7 +3,7 @@
 # std libs import
 
 # 3rd parties libs import
-from flask import Flask, current_app, request
+from flask import Flask
 from flask_babel import Babel
 
 babel = Babel()
@@ -33,9 +33,4 @@ def create_app():
     return app
 
 
-@babel.localeselector
-def get_locale():
-    #<! to test Italian language: configure web browser OR ...
-    #   ... decomment the following line of code and comment the final return
-    #return 'it'
-    return request.accept_languages.best_match(current_app.config['LANGUAGES'].keys())
+
