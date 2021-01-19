@@ -58,8 +58,9 @@ More infos
 
 @ these links:
 
-* https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project
-* https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_2nd_part
+* `Flask: how show a page with single language <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project>`_;
+* `Flask: how show a page with two languages <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_2nd_part>`_;
+* `Flask: managing the URLs <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_3rd_part>`_.
 
 License
 ----------
