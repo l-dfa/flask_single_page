@@ -1,0 +1,30 @@
+{% extends 'ajbase.html' %}
+
+<!-- filename single_page/ajacs/templates/ajindex.html -->
+
+{% block header %}
+  <h1>{% block title %}{{title}}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    
+    <select name="nation" id="nation" >
+         <option value="" >Please select a country</option>
+         {% for nid in nations.keys() %}
+             <option value="{{nid}}">{{nations.get(nid)}}</option>
+         {% endfor %}
+    </select>
+    <p></p>
+    <p name="nation_values" id="nation_values"></p>
+    
+    <!--
+    <button onclick="hide(this,true); debug('hide button 1');">Hide1</button>
+    <button onclick="hide(this); debug('hide button 2');">Hide2</button>
+    -->
+{% endblock %}
+
+{% block javas %}
+
+    <script src="{{ url_for('ajacs.static', filename='js/ajacs.js') }}"></script>
+    
+{% endblock %}

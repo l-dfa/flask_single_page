@@ -35,6 +35,7 @@ def pull_lang_code(endpoint, values):
 @twoels.route('/index.html')
 def index():
     # default language code is in babel.default_locale
+    current_app.logger.debug('> index')
     return render_template('2lindex.html', title=_('two languages title'))
 
 @babel.localeselector

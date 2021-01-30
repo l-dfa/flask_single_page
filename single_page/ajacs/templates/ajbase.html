@@ -1,0 +1,25 @@
+<!doctype html>
+
+<!-- filename single_page/ajacs/templates/ajbase.html -->
+<head>
+<title>{% block title %}{% endblock %} - Ajacs</title>
+<link rel="stylesheet" href="{{ url_for('ajacs.static', filename='css/style.css') }}">
+</head>
+<body>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>
+
+<!-- loading base javascripts -->
+<script type=text/javascript>$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+</script>
+
+
+{% block javas %}{% endblock %}
+</body>

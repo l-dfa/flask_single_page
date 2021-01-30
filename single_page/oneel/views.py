@@ -4,7 +4,7 @@
 from datetime import datetime
 
 # 3rd parties libs import
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, current_app
 
 # project modules import
 from single_page import sitemap
@@ -20,6 +20,7 @@ oneel = Blueprint('oneel',
 @oneel.route('/index')
 @oneel.route('/index.html')
 def index():
+    current_app.logger.debug('> index')
     return render_template('index.html', title='single language title')
 
 

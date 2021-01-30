@@ -60,7 +60,10 @@ More infos
 * `how show a page with single language <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project>`_;
 * `how show a page with two languages <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_2nd_part>`_;
 * `managing the URLs <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_3rd_part>`_;
-* `creating a sitemap.xml <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_4th_part>`_.
+* `creating a sitemap.xml <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_4th_part>`_;
+* `instance folder and log <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_5th_part>`_;
+* `adding unit tests <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_6th_part>`_;
+* `playing AJAX <https://luciano.defalcoalfano.it/blog/show/how_create_minimal_flask_project_7th_part>`_.
 
 License
 ----------
